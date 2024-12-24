@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>ECG Stress Prediction</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>ECG Stress Prediction</h1>
+
+        <form id="uploadForm">
+            <label for="ecgFile">Upload ECG CSV File:</label>
+            <input type="file" id="ecgFile" name="ecgFile" accept=".csv" required>
+
+            <label for="personIndex">Enter Person Index (0 - 3999):</label>
+            <input type="number" id="personIndex" name="personIndex" min="0" max="3999" required>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        <h2 id="result"></h2>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to JS file -->
+</body>
+
+</html>
